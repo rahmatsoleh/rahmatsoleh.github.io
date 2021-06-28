@@ -10,7 +10,7 @@ body {
 .jumbotron {
 	color: #fff;
 	height: 450px;
-	background-image: url('../../img/header.jpg');
+	background-image: url('../img/header.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	overflow: hidden;
