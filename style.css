@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+:root {
+  --light: #fff;
+  --blue: #1a3365;
+  --yellow: #ffbb00;
+  --black: #141010;
+  --red: #ff4343;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--blue);
+  position: relative;
+}
+
+header {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 100% 100%;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.tumb-img {
+  border-radius: 100px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  outline: 10px solid #eee;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+}
+
+#hero img:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease-in-out;
+}
+
+section#description {
+  margin-top: 100px;
+}
+
+section#description h1 {
+  text-transform: uppercase;
+  color: var(--light);
+  text-align: center;
+}
+
+section#description .job {
+  font-size: 0.9em;
+  color: var(--light);
+  text-align: center;
+}
+
+section#description .desc {
+  color: var(--light);
+  font-weight: 200;
+  margin: 0.5em 0.5em;
+  text-align: center;
+}
+
+section#medsos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 1em 1em 0;
+}
+
+section#medsos a {
+  background-color: var(--yellow);
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid var(--light);
+}
+
+section#medsos a:hover {
+  background-color: #ca9400;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: transform 0.2s ease-in-out;
+}
+
+section#medsos img {
+  width: 2em;
+}
+
+@media screen and (min-width: 765px) {
+  section#description h1 {
+    font-size: 3em;
+  }
+
+  section#description .job {
+    font-size: 1.2em;
+  }
+
+  section#medsos {
+    margin-top: 3em;
+  }
+  section#medsos img {
+    width: 4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section#medsos {
+    width: 70%;
+    margin: 3em auto;
+    gap: 1em;
+  }
+
+  section#description {
+    width: 70%;
+    margin: 100px auto 0;
+  }
+
+  section#description .desc {
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
